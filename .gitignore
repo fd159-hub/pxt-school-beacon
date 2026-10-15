@@ -1,0 +1,10 @@
+node_modules/
+pxt_modules/
+built/
+.pxt/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

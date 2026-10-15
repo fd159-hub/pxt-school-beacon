@@ -1,26 +1,26 @@
-const UUID = "7E6A9F10-4B92-4B8C-A571-6B59D81E0026"
-const MAJOR = 101
-const MINOR = 1
-let isAdvertising = true
+// 教學範例：同一校園共用 UUID，Major 表示區域，Minor 表示裝置。
+const BEACON_UUID = "7E6A9F10-4B92-4B8C-A571-6B59D81E0026"
+const BEACON_MAJOR = 101
+const BEACON_MINOR = 1
 
-function startBeacon() {
-    schoolbeacon.start(UUID, MAJOR, MINOR, -59)
-    isAdvertising = true
-    basic.showIcon(IconNames.Yes)
+function showBeaconState() {
+    basic.showIcon(schoolbeacon.isBeaconActive() ? IconNames.Yes : IconNames.No)
 }
 
 input.onButtonPressed(Button.A, function () {
-    if (isAdvertising) {
-        schoolbeacon.stop()
-        isAdvertising = false
-        basic.showIcon(IconNames.No)
+    if (schoolbeacon.isBeaconActive()) {
+        schoolbeacon.stopBeacon()
     } else {
-        startBeacon()
+        schoolbeacon.startBeacon(BEACON_UUID, BEACON_MAJOR, BEACON_MINOR)
     }
+    showBeaconState()
+    serial.writeValue("beaconError", schoolbeacon.getLastError())
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(MINOR)
-    basic.pause(500)
-    basic.showIcon(isAdvertising ? IconNames.Yes : IconNames.No)
+    basic.showNumber(BEACON_MINOR)
+    showBeaconState()
 })
-startBeacon()
+// 開機自動廣播；勾號僅代表 SDK 啟動成功，手機接收仍須實測。
+schoolbeacon.startBeacon(BEACON_UUID, BEACON_MAJOR, BEACON_MINOR)
+showBeaconState()
+serial.writeValue("beaconError", schoolbeacon.getLastError())
