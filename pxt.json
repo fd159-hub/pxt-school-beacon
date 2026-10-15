@@ -1,0 +1,12 @@
+{
+  "name": "pxt-school-beacon",
+  "version": "0.0.1",
+  "description": "Experimental iBeacon advertising extension for micro:bit V2",
+  "dependencies": {"core": "*"},
+  "files": ["schoolbeacon.ts", "schoolbeacon.cpp", "SchoolBeaconService.h", "SchoolBeaconService.cpp"],
+  "testFiles": ["test.ts"],
+  "public": false,
+  "supportedTargets": ["microbit"],
+  "preferredEditor": "tsprj",
+  "disablesVariants": ["mbdal"]
+}
