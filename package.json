@@ -1,0 +1,12 @@
+{
+  "name": "pxt-school-beacon-build",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node scripts/build.cjs build && node scripts/verify-hex.cjs built/mbcodal-binary.hex",
+    "build:sim": "node scripts/build.cjs build -j"
+  },
+  "devDependencies": {
+    "makecode": "1.3.6"
+  }
+}

@@ -1,0 +1,19 @@
+using project: <WORKSPACE>\outputs\pxt-school-beacon/pxt.json
+using config: <WORKSPACE>\outputs\pxt-school-beacon\mkc.json
+using editor: https://makecode.microbit.org/ v9.0.12
+Exception: Error: Error: please add 'shims.d.ts' to "files" in pxt.json
+    at e.userError (https://makecode.microbit.org//pxtworker.js:23:74627)
+    at i (https://makecode.microbit.org//pxtworker.js:23:330364)
+    at s (https://makecode.microbit.org//pxtworker.js:23:330916)
+    at https://makecode.microbit.org//pxtworker.js:23:331820
+    at Array.map (<anonymous>)
+    at e.MainPackage.getCompileOptionsAsync (https://makecode.microbit.org//pxtworker.js:23:331760)
+    at <WORKSPACE>\work\mkc\node_modules\makecode\built\languageService.js:126:96
+    at evalmachine.<anonymous>:1:155
+Exception: TypeError: Cannot read properties of null (reading 'success')
+    at buildCommandOnce (<WORKSPACE>\work\mkc\node_modules\makecode-core\built\commands.js:196:37)
+    at async Command.buildCommand (<WORKSPACE>\work\mkc\node_modules\makecode\built\cli.js:48:9)
+    at async Command.parseAsync (<WORKSPACE>\work\mkc\node_modules\commander\lib\command.js:923:5)
+    at async mainCli (<WORKSPACE>\work\mkc\node_modules\makecode\built\cli.js:235:5)
+    at async mainWrapper (<WORKSPACE>\work\mkc\node_modules\makecode\built\cli.js:239:9)
+Build failed

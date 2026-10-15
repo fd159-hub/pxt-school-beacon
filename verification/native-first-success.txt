@@ -1,0 +1,39 @@
+using project: <WORKSPACE>\outputs\pxt-school-beacon/pxt.json
+using config: <WORKSPACE>\outputs\pxt-school-beacon\mkc.json
+using editor: https://makecode.microbit.org/ v9.0.12
+Download https://cdn.makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.hex
+compiling C++; this can take a while
+Download https://www.makecode.com/api/compile/extension
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [0]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [1]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [2]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [3]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [4]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [5]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [6]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [7]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [8]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [9]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+waiting 8s for C++ build... [10]
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.json
+build log https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.log
+Download https://makecode.com/compile/717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6.hex
+write <WORKSPACE>\outputs\pxt-school-beacon\built/yotta.json
+write <WORKSPACE>\outputs\pxt-school-beacon\built/codal.json
+write <WORKSPACE>\outputs\pxt-school-beacon\built/mbdal-binary.asm
+write <WORKSPACE>\outputs\pxt-school-beacon\built/mbdal-binary.hex
+write <WORKSPACE>\outputs\pxt-school-beacon\built/mbcodal-binary.asm
+write <WORKSPACE>\outputs\pxt-school-beacon\built/mbcodal-binary.hex
+write <WORKSPACE>\outputs\pxt-school-beacon\built/binary.hex
+Build OK

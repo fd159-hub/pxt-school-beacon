@@ -1,0 +1,11 @@
+{
+  "name": "school-beacon-consumer-test",
+  "dependencies": {
+    "core": "*",
+    "pxt-school-beacon": "github:fd159-hub/pxt-school-beacon#a967a86c63975a533c2ca8c236825b7da68ae207"
+  },
+  "files": [
+    "main.ts"
+  ],
+  "preferredEditor": "tsprj"
+}

@@ -1,0 +1,41 @@
+using project: <WORKSPACE>\work\consumer/pxt.json
+using config: <WORKSPACE>\work\consumer\mkc.json
+using editor: https://makecode.microbit.org/ v9.0.12
+adding missing package microphone
+Download https://cdn.makecode.com/compile/2c50f19b0e437906c2c1e6a80dbd65a04c25c67ba17e23e572b9b467951f743b.hex
+Download https://cdn.makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.hex
+compiling C++; this can take a while
+Download https://www.makecode.com/api/compile/extension
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [0]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [1]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [2]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [3]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [4]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [5]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [6]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [7]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [8]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [9]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+waiting 8s for C++ build... [10]
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.json
+build log https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.log
+Download https://makecode.com/compile/5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc.hex
+write <WORKSPACE>\work\consumer\built/yotta.json
+write <WORKSPACE>\work\consumer\built/codal.json
+write <WORKSPACE>\work\consumer\built/mbdal-binary.asm
+write <WORKSPACE>\work\consumer\built/mbdal-binary.hex
+write <WORKSPACE>\work\consumer\built/mbcodal-binary.asm
+write <WORKSPACE>\work\consumer\built/mbcodal-binary.hex
+write <WORKSPACE>\work\consumer\built/binary.hex
+Build OK

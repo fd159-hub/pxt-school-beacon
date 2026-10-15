@@ -1,0 +1,371 @@
+using project: <WORKSPACE>\outputs\pxt-school-beacon/pxt.json
+using config: <WORKSPACE>\outputs\pxt-school-beacon\mkc.json
+using editor: https://makecode.microbit.org/ v9.0.12
+Download https://cdn.makecode.com/compile/dbd7b722940c69e86f88ef0bd7ea71454063955fd52b9b20df0440095cbdbe55.hex
+Download https://cdn.makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.hex
+compiling C++; this can take a while
+Download https://www.makecode.com/api/compile/extension
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [0]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [1]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [2]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [3]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [4]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [5]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [6]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [7]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [8]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [9]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+waiting 8s for C++ build... [10]
+Download https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.json
+build log https://makecode.com/compile/e1b86832472cead83a6aa5186624a27e8b2d755c723e7a8cf34899728bc0aff6.log
+C++ build failed
+Cloning into '/home/build/prjclone'...
+Note: checking out '490a890626674aa859a2f9f19d96dc8e2367f137'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+Creating libraries folder
+Cloning into: https://github.com/lancaster-university/codal-microbit-v2
+Cloning into 'codal-microbit-v2'...
+Checking out branch: v0.3.5
+HEAD is now at f5d1682 Snapshot v0.3.5
+Set target: codal-microbit-v2 
+Using target-locked.json
+Targeting codal-microbit-v2
+Supressing -Wexpansion-to-defined.
+Installing dependencies...
+Cloning into: https://github.com/lancaster-university/codal-core
+Cloning into 'codal-core'...
+Checking out branch: e6b061f2a6d8977811e3025da387d3007e5796f2
+HEAD is now at e6b061f Move delete listener callback (#189)
+Cloning into: https://github.com/lancaster-university/codal-nrf52
+Cloning into 'codal-nrf52'...
+Submodule 'nrfx' (https://github.com/NordicSemiconductor/nrfx) registered for path 'nrfx'
+Cloning into '/home/build/prjclone/libraries/codal-nrf52/nrfx'...
+Checking out branch: 1fbb7240290fe36a55c61378f5cdeb7640f3ec4a
+HEAD is now at 1fbb724 Merge pull request #56 from lancaster-university/audio-refactor
+Cloning into: https://github.com/microbit-foundation/codal-microbit-nrf5sdk
+Cloning into 'codal-microbit-nrf5sdk'...
+Checking out branch: 4b8abc690f6c9fca6132e6db5ee13a795a263f88
+HEAD is now at 4b8abc6 Suppress all warnings from this target as it's 3rd party code. (#18)
+Using library: codal-microbit-v2
+Building WITH softdevice support
+Using library: codal-core
+Using library: codal-nrf52
+Using library: codal-microbit-nrf5sdk
+/tmp/ccLc3L6I.s: Assembler messages:
+/tmp/ccLc3L6I.s:110: Warning: setting incorrect section attributes for .data.ramfuncs
+/home/build/prjclone/pxtapp/core/serial.cpp:275:13: warning: 'void pxt::sendString(const char*, int)' defined but not used [-Wunused-function]
+ static void sendString(const char *c, int len) {
+             ^~~~~~~~~~
+/home/build/prjclone/pxtapp/core/sendbufferbrightness.s: Assembler messages:
+/home/build/prjclone/pxtapp/core/sendbufferbrightness.s: Warning: end of file not at end of a line; newline inserted
+CMakeFiles/MICROBIT.dir/pxtapp/pxt-school-beacon/schoolbeacon.cpp.obj: In function `schoolbeacon::start(pxt::BoxedString*, int, int, int)':
+/home/build/prjclone/pxtapp/pxt-school-beacon/schoolbeacon.cpp:34: undefined reference to `SchoolBeaconService::start(unsigned char const*, unsigned short, unsigned short, signed char)'
+/home/build/prjclone/pxtapp/pxt-school-beacon/schoolbeacon.cpp:33: undefined reference to `SchoolBeaconService::SchoolBeaconService()'
+CMakeFiles/MICROBIT.dir/pxtapp/pxt-school-beacon/schoolbeacon.cpp.obj: In function `schoolbeacon::stop()':
+/home/build/prjclone/pxtapp/pxt-school-beacon/schoolbeacon.cpp:37: undefined reference to `SchoolBeaconService::stop()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [MICROBIT] Error 1
+make[1]: *** [CMakeFiles/MICROBIT.dir/all] Error 2
+make: *** [all] Error 2
+
+-- The C compiler identification is GNU 7.3.1
+-- The CXX compiler identification is GNU 7.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/arm-none-eabi-gcc
+-- Adding library path: (/home/build/prjclone/libraries)
+Submodule path 'nrfx': checked out '281cc2e178fd9a470d844b3afdea9eb322a0b0e8'
+Synchronizing submodule url for 'nrfx'
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/build/prjclone/build
+Scanning dependencies of target codal-core
+[  0%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/CodalCompat.cpp.obj
+[  1%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/CodalAssert.cpp.obj
+[  1%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/CodalDevice.cpp.obj
+[  2%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/CodalListener.cpp.obj
+[  3%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/CodalComponent.cpp.obj
+[  3%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/CodalHeapAllocator.cpp.obj
+[  4%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/MemberFunctionCallback.cpp.obj
+[  4%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/CodalUtil.cpp.obj
+[  4%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/CodalFiber.cpp.obj
+[  5%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/CodalDmesg.cpp.obj
+[  5%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/codal_default_target_hal.cpp.obj
+[  6%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/AbstractButton.cpp.obj
+[  7%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/core/gcc_compat.cpp.obj
+[  7%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/CodalUSB.cpp.obj
+[  7%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/Accelerometer.cpp.obj
+[  7%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/Compass.cpp.obj
+[  8%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/Display.cpp.obj
+[  8%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/Gyroscope.cpp.obj
+[  9%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/I2C.cpp.obj
+[  9%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/PinPeripheral.cpp.obj
+[  9%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/SPI.cpp.obj
+[ 10%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/Sensor.cpp.obj
+[ 10%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/Serial.cpp.obj
+[ 11%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/driver-models/Timer.cpp.obj
+[ 11%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/AnalogSensor.cpp.obj
+[ 12%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/AnimatedDisplay.cpp.obj
+[ 12%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/AsciiKeyMap.cpp.obj
+[ 12%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/Button.cpp.obj
+[ 13%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/FXOS8700.cpp.obj
+[ 13%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/GhostFAT.cpp.obj
+[ 14%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/HID.cpp.obj
+[ 14%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/HIDJoystick.cpp.obj
+[ 15%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/HIDKeyboard.cpp.obj
+[ 15%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/HIDMouse.cpp.obj
+[ 15%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/ILI9341.cpp.obj
+[ 16%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/KeyValueStorage.cpp.obj
+[ 16%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/LEDMatrix.cpp.obj
+[ 17%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/LIS3DH.cpp.obj
+[ 17%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/LSM303Accelerometer.cpp.obj
+[ 18%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/LSM303Magnetometer.cpp.obj
+[ 18%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/LinearAnalogSensor.cpp.obj
+[ 18%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/MAG3110.cpp.obj
+[ 19%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/MMA8653.cpp.obj
+[ 19%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/MPU6050.cpp.obj
+[ 20%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/MessageBus.cpp.obj
+[ 20%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/MultiButton.cpp.obj
+[ 21%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/NonLinearAnalogSensor.cpp.obj
+[ 21%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/PearsonHash.cpp.obj
+[ 21%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/PulseIn.cpp.obj
+[ 22%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/ST7735.cpp.obj
+[ 22%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/ScreenIO.cpp.obj
+[ 23%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/StandardSPIFlash.cpp.obj
+[ 24%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/TouchSensor.cpp.obj
+[ 23%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/TouchButton.cpp.obj
+[ 24%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/drivers/USBMSC.cpp.obj
+[ 24%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/DataStream.cpp.obj
+[ 25%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/EffectFilter.cpp.obj
+[ 26%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/LevelDetector.cpp.obj
+[ 26%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/LevelDetectorSPL.cpp.obj
+[ 27%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/MemorySource.cpp.obj
+[ 27%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/LowPassFilter.cpp.obj
+[ 27%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/Mixer.cpp.obj
+[ 28%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/StreamAnalyzer.cpp.obj
+[ 28%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/SerialStreamer.cpp.obj
+[ 28%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/StreamNormalizer.cpp.obj
+[ 29%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/StreamRecording.cpp.obj
+[ 29%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/StreamSplitter.cpp.obj
+[ 30%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/streams/Synthesizer.cpp.obj
+[ 30%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/types/BitmapFont.cpp.obj
+[ 30%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/types/CoordinateSystem.cpp.obj
+[ 31%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/types/Event.cpp.obj
+[ 31%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/types/Image.cpp.obj
+[ 32%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/types/ManagedBuffer.cpp.obj
+[ 32%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/types/ManagedString.cpp.obj
+[ 33%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/types/Matrix4.cpp.obj
+[ 33%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/types/RefCountedInit.cpp.obj
+[ 33%] Building CXX object libraries/codal-core/CMakeFiles/codal-core.dir/source/types/RefCounted.cpp.obj
+[ 34%] Linking CXX static library ../../libcodal-core.a
+[ 34%] Built target codal-core
+Scanning dependencies of target codal-nrf52
+[ 34%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52ADC.cpp.obj
+[ 35%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52I2C.cpp.obj
+[ 35%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52Pin.cpp.obj
+[ 35%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52RadioDatagram.cpp.obj
+[ 35%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52PDM.cpp.obj
+[ 36%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52Radio.cpp.obj
+[ 37%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52Serial.cpp.obj
+[ 37%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52RadioEvent.cpp.obj
+[ 37%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52PWM.cpp.obj
+[ 38%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52SPI.cpp.obj
+[ 39%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52TouchSensor.cpp.obj
+[ 39%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRF52USB.cpp.obj
+[ 40%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/NRFLowLevelTimer.cpp.obj
+[ 40%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/WS2812B.cpp.obj
+[ 40%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/ZSingleWireSerial.cpp.obj
+[ 41%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/codal_target_hal_base.cpp.obj
+[ 41%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/neopixel.cpp.obj
+[ 42%] Building CXX object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/source/peripheral_alloc.cpp.obj
+[ 42%] Building ASM object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/asm/CortexContextSwitch.s.obj
+[ 43%] Building C object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/nrfx/mdk/system_nrf52833.c.obj
+[ 43%] Building ASM object libraries/codal-nrf52/CMakeFiles/codal-nrf52.dir/nrfx_mods/mdk/gcc_startup_nrf52833.S.obj
+[ 44%] Linking CXX static library ../../libcodal-nrf52.a
+[ 44%] Built target codal-nrf52
+Scanning dependencies of target codal-microbit-nrf5sdk
+[ 44%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK_mods/nrf_log_backend_dmesg.c.obj
+[ 45%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/log/src/nrf_log_backend_serial.c.obj
+[ 46%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/util/app_error_weak.c.obj
+[ 47%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK_mods/app_timer2.c.obj
+[ 47%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/util/app_error.c.obj
+[ 47%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/util/app_util_platform.c.obj
+[ 48%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/log/src/nrf_log_str_formatter.c.obj
+[ 48%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/log/src/nrf_log_frontend.c.obj
+[ 48%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/util/app_error_handler_gcc.c.obj
+[ 48%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK_mods/drv_rtc.c.obj
+[ 49%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/crc32/crc32.c.obj
+[ 49%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/fds/fds.c.obj
+[ 49%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/atomic_fifo/nrf_atfifo.c.obj
+[ 50%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/atomic_flags/nrf_atflags.c.obj
+[ 50%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/atomic/nrf_atomic.c.obj
+[ 51%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/balloc/nrf_balloc.c.obj
+[ 51%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/external/fprintf/nrf_fprintf.c.obj
+[ 52%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/external/fprintf/nrf_fprintf_format.c.obj
+[ 52%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/fstorage/nrf_fstorage.c.obj
+[ 52%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/fstorage/nrf_fstorage_sd.c.obj
+[ 53%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/memobj/nrf_memobj.c.obj
+[ 53%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK_mods/nrf_pwr_mgmt.c.obj
+[ 54%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/ringbuf/nrf_ringbuf.c.obj
+[ 54%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/experimental_section_vars/nrf_section_iter.c.obj
+[ 54%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/strerror/nrf_strerror.c.obj
+[ 55%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/sortlist/nrf_sortlist.c.obj
+[ 55%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/libraries/bootloader/dfu/nrf_dfu_svci.c.obj
+[ 56%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/common/ble_advdata.c.obj
+[ 57%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/common/ble_conn_state.c.obj
+[ 57%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/common/ble_conn_params.c.obj
+[ 57%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/common/ble_srv_common.c.obj
+[ 58%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/nrf_ble_gatt/nrf_ble_gatt.c.obj
+[ 58%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/gatt_cache_manager.c.obj
+[ 58%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/gatts_cache_manager.c.obj
+[ 59%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/id_manager.c.obj
+[ 59%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/peer_data_storage.c.obj
+[ 60%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/peer_database.c.obj
+[ 60%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/peer_id.c.obj
+[ 61%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/peer_manager.c.obj
+[ 61%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/peer_manager_handler.c.obj
+[ 61%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/pm_buffer.c.obj
+[ 62%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/security_dispatcher.c.obj
+[ 62%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/peer_manager/security_manager.c.obj
+[ 63%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/softdevice/common/nrf_sdh.c.obj
+[ 63%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/softdevice/common/nrf_sdh_ble.c.obj
+[ 64%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK_mods/nrf_sdh_soc.c.obj
+[ 64%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/ble_services/ble_dfu/ble_dfu.c.obj
+[ 64%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK_mods/ble_dfu_bonded.c.obj
+[ 65%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/ble_services/ble_dfu/ble_dfu_unbonded.c.obj
+[ 65%] Building C object libraries/codal-microbit-nrf5sdk/CMakeFiles/codal-microbit-nrf5sdk.dir/nRF5SDK/components/ble/ble_services/ble_dis/ble_dis.c.obj
+[ 66%] Linking CXX static library ../../libcodal-microbit-nrf5sdk.a
+[ 66%] Built target codal-microbit-nrf5sdk
+Scanning dependencies of target codal-microbit-v2
+[ 66%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/FSCache.cpp.obj
+[ 67%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitAccelerometer.cpp.obj
+[ 67%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitAudio.cpp.obj
+[ 67%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitCompass.cpp.obj
+[ 68%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitDevice.cpp.obj
+[ 69%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitDisplay.cpp.obj
+[ 69%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitCompat.cpp.obj
+[ 69%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitCompassCalibrator.cpp.obj
+[ 70%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitFile.cpp.obj
+[ 70%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitFileSystem.cpp.obj
+[ 70%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitFlash.cpp.obj
+[ 71%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitLog.cpp.obj
+[ 71%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitMemoryMap.cpp.obj
+[ 72%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitPowerManager.cpp.obj
+[ 72%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitRadio.cpp.obj
+[ 73%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitRadioDatagram.cpp.obj
+[ 73%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitRadioEvent.cpp.obj
+[ 73%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitThermometer.cpp.obj
+[ 74%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroBitUSBFlashManager.cpp.obj
+[ 74%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/MicroSynth.cpp.obj
+[ 75%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/Mixer2.cpp.obj
+[ 75%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/NRF52FlashManager.cpp.obj
+[ 76%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/NRF52LedMatrix.cpp.obj
+[ 76%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/PacketBuffer.cpp.obj
+[ 76%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/SampleSource.cpp.obj
+[ 77%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/SoundEmojiSynthesizer.cpp.obj
+[ 77%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/SoundExpressions.cpp.obj
+[ 78%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/SoundOutputPin.cpp.obj
+[ 78%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/SoundSynthesizerEffects.cpp.obj
+[ 79%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitAccelerometerService.cpp.obj
+[ 79%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitBLEChar.cpp.obj
+[ 79%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitBLEManager.cpp.obj
+[ 80%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitBLEService.cpp.obj
+[ 80%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitBLEServices.cpp.obj
+[ 81%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitBLETypes.cpp.obj
+[ 81%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitButtonService.cpp.obj
+[ 82%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitEddystone.cpp.obj
+[ 82%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitEventService.cpp.obj
+[ 82%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitIOPinService.cpp.obj
+[ 83%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitLEDService.cpp.obj
+[ 83%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitMagnetometerService.cpp.obj
+[ 84%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitPartialFlashingService.cpp.obj
+[ 84%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitTemperatureService.cpp.obj
+[ 85%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitUARTService.cpp.obj
+[ 85%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/bluetooth/MicroBitUtilityService.cpp.obj
+[ 85%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/compat/MbedMemberFunctionCallback.cpp.obj
+[ 86%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/compat/MicroBitButton.cpp.obj
+[ 87%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/compat/MicroBitSerial.cpp.obj
+[ 87%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/source/compat/MicroBitI2C.cpp.obj
+[ 87%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/model/MicroBit.cpp.obj
+[ 88%] Building CXX object libraries/codal-microbit-v2/CMakeFiles/codal-microbit-v2.dir/model/MicroBitIO.cpp.obj
+[ 88%] Linking CXX static library ../../libcodal-microbit-v2.a
+[ 88%] Built target codal-microbit-v2
+Scanning dependencies of target MICROBIT
+[ 88%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/advmath.cpp.obj
+[ 88%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/basic.cpp.obj
+[ 89%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/buffer.cpp.obj
+[ 89%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/codal.cpp.obj
+[ 89%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/controlgc.cpp.obj
+[ 90%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/control.cpp.obj
+[ 91%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/core.cpp.obj
+[ 91%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/gc.cpp.obj
+[ 92%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/input.cpp.obj
+[ 92%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/images.cpp.obj
+[ 92%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/led.cpp.obj
+[ 93%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/light.cpp.obj
+[ 93%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/logo.cpp.obj
+[ 94%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/music.cpp.obj
+[ 94%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/pins.cpp.obj
+[ 94%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/pxt.cpp.obj
+[ 95%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/serial.cpp.obj
+[ 95%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/soundexpressions.cpp.obj
+[ 96%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/touchmode.cpp.obj
+[ 96%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/core/trig.cpp.obj
+[ 97%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/main.cpp.obj
+[ 97%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/pointers.cpp.obj
+[ 97%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/pxt-school-beacon/SchoolBeaconService.cpp.obj
+[ 98%] Building CXX object CMakeFiles/MICROBIT.dir/pxtapp/pxt-school-beacon/schoolbeacon.cpp.obj
+[ 98%] Building ASM object CMakeFiles/MICROBIT.dir/pxtapp/core/sendbuffer.s.obj
+[ 99%] Building ASM object CMakeFiles/MICROBIT.dir/pxtapp/core/sendbufferbrightness.s.obj
+[ 99%] Building ASM object CMakeFiles/MICROBIT.dir/pxtapp/core/sendbuffernrf52.s.obj
+[100%] Linking CXX executable MICROBIT
+CMakeFiles/MICROBIT.dir/build.make:757: recipe for target 'MICROBIT' failed
+CMakeFiles/Makefile2:70: recipe for target 'CMakeFiles/MICROBIT.dir/all' failed
+Makefile:83: recipe for target 'all' failed
+
+Exception: Error: C++ build failed
+    at Ctx.compileExtInfo (<WORKSPACE>\work\mkc\node_modules\makecode-core\built\service.js:91:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Ctx.simpleCompileAsync (<WORKSPACE>\work\mkc\node_modules\makecode-core\built\service.js:128:17)
+    at async Project.buildAsync (<WORKSPACE>\work\mkc\node_modules\makecode-core\built\mkc.js:220:21)
+    at async buildOnePrj (<WORKSPACE>\work\mkc\node_modules\makecode-core\built\commands.js:34:21)
+    at async buildCommandOnce (<WORKSPACE>\work\mkc\node_modules\makecode-core\built\commands.js:195:24)
+    at async Command.buildCommand (<WORKSPACE>\work\mkc\node_modules\makecode\built\cli.js:48:9)
+    at async Command.parseAsync (<WORKSPACE>\work\mkc\node_modules\commander\lib\command.js:923:5)
+    at async mainCli (<WORKSPACE>\work\mkc\node_modules\makecode\built\cli.js:235:5)
+    at async mainWrapper (<WORKSPACE>\work\mkc\node_modules\makecode\built\cli.js:239:9)
+Exception: TypeError: Cannot read properties of null (reading 'success')
+    at buildCommandOnce (<WORKSPACE>\work\mkc\node_modules\makecode-core\built\commands.js:196:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Command.buildCommand (<WORKSPACE>\work\mkc\node_modules\makecode\built\cli.js:48:9)
+    at async Command.parseAsync (<WORKSPACE>\work\mkc\node_modules\commander\lib\command.js:923:5)
+    at async mainCli (<WORKSPACE>\work\mkc\node_modules\makecode\built\cli.js:235:5)
+    at async mainWrapper (<WORKSPACE>\work\mkc\node_modules\makecode\built\cli.js:239:9)
+Build failed

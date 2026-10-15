@@ -1,0 +1,13 @@
+using project: <WORKSPACE>\work\github-consumer/pxt.json
+using config: <WORKSPACE>\work\github-consumer\mkc.json
+using editor: https://makecode.microbit.org/ v9.0.12
+GET https://cdn.makecode.com/api/gh/fd159-hub/pxt-school-beacon/a967a86c63975a533c2ca8c236825b7da68ae207/text?cdn=20261015
+adding missing package microphone
+write <WORKSPACE>\work\github-consumer\built/yotta.json
+write <WORKSPACE>\work\github-consumer\built/codal.json
+write <WORKSPACE>\work\github-consumer\built/mbdal-binary.asm
+write <WORKSPACE>\work\github-consumer\built/mbdal-binary.hex
+write <WORKSPACE>\work\github-consumer\built/mbcodal-binary.asm
+write <WORKSPACE>\work\github-consumer\built/mbcodal-binary.hex
+write <WORKSPACE>\work\github-consumer\built/binary.hex
+Build OK

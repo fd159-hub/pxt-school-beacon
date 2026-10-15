@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-15",
+  "timezone": "Asia/Taipei",
+  "status": "native-build-passed-hardware-unverified",
+  "prototypeZipSha256": "9cc1ec9547d0463c5bb8d48036b3a8cb6caa3d900a7565f5cfb267787b3b2775",
+  "prototypeImportCommit": "c0fec8fc71aff877c8872a22c2699a6494c8a197",
+  "testedNativeSourceCommit": "a967a86c63975a533c2ca8c236825b7da68ae207",
+  "node": "22.22.3",
+  "npm": "10.9.8",
+  "makecode": "1.3.6",
+  "makecodeCore": "1.7.10",
+  "target": {
+    "branch": "stable9.0",
+    "tag": "v9.0.12",
+    "commits": "https://github.com/microsoft/pxt-microbit/commits/49d8b2a09658f4c68bdde0d80757f02138c5d913",
+    "target": "9.0.12",
+    "pxt": "13.0.9"
+  },
+  "editorRelease": "a2de741814d32e5156dd57569b9229adbfdb07d6",
+  "codal": {
+    "version": "v0.3.5",
+    "commit": "f5d1682fc3882022d3d5a7facb1fddb4b0ea7b52",
+    "nrfSDK": "4b8abc690f6c9fca6132e6db5ee13a795a263f88",
+    "softdevice": "S113"
+  },
+  "nativeBuildHash": "717c4c08e3b576ae2776c6eebe8432e16782995a43c424e585eeeaef1425a2a6",
+  "consumerBuildHash": "5e6ed0b759a6a4a7de287b60c0738a894a2c4d96bdd9ebe2f9a71083d01780bc",
+  "buildCommand": "npm.cmd ci --ignore-scripts; npm.cmd run build",
+  "v2Hex": {
+    "file": "school-beacon-v2-experimental.hex",
+    "bytes": 851557,
+    "sha256": "97b67b281901f2b57ca980b34b6baaad8d3c7dfdd430d350f58048d69f7c4202",
+    "records": 18933,
+    "dataBytes": 302695
+  },
+  "sourceSha256": {
+    "pxt.json": "5426e9b0bec0469ec7e1b97c80619f0829ddf5a369cb87f0b174c564cd9cbf34",
+    "schoolbeacon.ts": "b67c2e81f22aff54a1af64d464fa91d248f48dc124afcc01046e184950bb4af7",
+    "schoolbeacon.cpp": "b5df8ecf950fcc741ec9f0d453e62ada0bfbd40b105a462d966aa9c5c2ca4ee3",
+    "SchoolBeaconService.h": "85f21b58ccdb7109f412807ca3183f906e962dd969ddb84540abec90d35495e9",
+    "SchoolBeaconService.cpp": "60de0140664e0746524f19312dfa30c16ca1352fd13d8ff4dcd5a78232ff6d1e",
+    "shims.d.ts": "d50887ed8037c8893cc9cb5fa0d7cc2014195e2e7b88f1cd0b8eaa945c9c6265",
+    "enums.d.ts": "d50887ed8037c8893cc9cb5fa0d7cc2014195e2e7b88f1cd0b8eaa945c9c6265",
+    "test.ts": "66aebb059df7ac9b3f4b38bc38ae9d4ca533aaa2d9e63cb4126701427a40e42e"
+  },
+  "hardwareTests": "NOT RUN",
+  "uf2": "Not generated; micro:bit target produces HEX",
+  "universalHex": {
+    "file": "school-beacon-universal-experimental.hex",
+    "bytes": 1248268,
+    "sha256": "ab86a002130e5b352a133908d9224c2ce49996dc79efb870fd04af7b2ec103f0"
+  }
+}
