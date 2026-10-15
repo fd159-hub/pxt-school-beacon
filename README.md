@@ -1,6 +1,6 @@
 # 校園 iBeacon：pxt-school-beacon
 
-**實驗性專案：已通過 MakeCode micro:bit V2 原生編譯，尚未燒錄實機，尚未驗證空中 BLE 廣播。** 不提供手機 App、Cloudflare Worker 或 LINE Bot 後端。
+**實驗性專案：已通過 MakeCode micro:bit V2 原生編譯；使用者回報 iPhone 已收到正確的 UUID／Major／Minor，A/B 按鍵、斷電重開及反覆啟停測試皆無誤。** 不提供手機 App、Cloudflare Worker 或 LINE Bot 後端。
 
 Repository：https://github.com/fd159-hub/pxt-school-beacon
 
@@ -98,7 +98,7 @@ npm run build 也會檢查 V2 HEX 全部 Intel HEX 紀錄的長度、checksum �
 | 模擬器 JavaScript 建置 | Build OK，exit 0；不代表 BLE 成功 |
 | 與官方 Bluetooth 同時使用 | 預期失敗：microbit-dal.bluetooth.enabled 設定衝突 |
 | V2 HEX 檔案驗證 | 18,933 筆紀錄、302,695 data bytes、checksum 皆正確 |
-| A/B 按鍵與空中封包 | 已包含在編譯產物；實機行為未驗證 |
+| iPhone 接收與基本實機操作 | 使用者回報 UUID／Major／Minor、A/B 按鍵、斷電重開、反覆啟停皆通過；詳見 verification/hardware-test.md |
 
 MakeCode target 9.0.12、PXT 13.0.9、CODAL v0.3.5、Nordic SDK Commit 4b8abc690f6c9fca6132e6db5ee13a795a263f88（S113）。詳細版本、SHA256 與建置日誌見 verification/。
 
@@ -122,9 +122,9 @@ MakeCode target 9.0.12、PXT 13.0.9、CODAL v0.3.5、Nordic SDK Commit 4b8abc690
 00 65 00 01 C5
 ```
 
-共 30 bytes。Flags 為 02 01 06；1A 為 Manufacturer AD 長度、FF 為 AD type；Apple Company ID 0x004C 在封包內是 Little Endian 的 4C 00；02 15 為 iBeacon 類型與資料長度；UUID 16 bytes；Major/Minor 各 2 bytes、Big Endian；C5 是 -59 的 signed int8 表示。以上是程式預期值，尚無手機截圖或空中封包擷取證據。
+共 30 bytes。Flags 為 02 01 06；1A 為 Manufacturer AD 長度、FF 為 AD type；Apple Company ID 0x004C 在封包內是 Little Endian 的 4C 00；02 15 為 iBeacon 類型與資料長度；UUID 16 bytes；Major/Minor 各 2 bytes、Big Endian；C5 是 -59 的 signed int8 表示。以上為程式預期的原始位元組。使用者已回報 iPhone 能收到並核對 UUID／Major／Minor；尚無原始封包截圖或 BLE sniffer 擷取證據。
 
-## micro:bit V2 / nRF Connect 實機驗收
+## micro:bit V2 實機驗收（Android 補充流程）
 
 1. 準備 micro:bit V2、USB 資料線、Android 手機與 nRF Connect。先將單片裝置放在桌上測試，記錄板子版本、手機 OS、App 版本及 HEX SHA256。
 2. 將 V2 HEX 複製到 MICROBIT 磁碟，等待寫入完成，重新供電。若 LED 叉號，讀取 Serial 的 beaconError，不應直接判定天線或手機故障。
@@ -136,11 +136,17 @@ MakeCode target 9.0.12、PXT 13.0.9、CODAL v0.3.5、Nordic SDK Commit 4b8abc690
 8. 修改 Minor=42、Major=1，重建後核對尾端 00 01 00 2A C5；另測 0 / 65535 邊界、無效 UUID、重複 start/stop、stop-before-start，記錄結果。
 9. 手機接收時間差受掃描與 OS 排程影響，不能精準證明 200 ms；需要精準量測時使用 BLE sniffer。iOS 若未顯示原始 iBeacon 資料，改用 Core Location 測試程式確認。
 
-以上皆為待執行流程，不是本次已通過的實機測試。
+上述為完整驗收流程；目前通過的項目以 verification/hardware-test.md 為準。原始封包、參數邊界、精準間隔與延長穩定性測試尚未完成。
+
+## iPhone 驗收與已回報結果
+
+iPhone 建議使用可設定 iBeacon UUID 的掃描 App，例如 [TelinkBeacon](https://apps.apple.com/tw/app/telinkbeacon/id1638877371)。啟用藍牙及 App 要求的定位權限，加入本範例 UUID，再核對 Major=101、Minor=1。一般 Core Bluetooth 掃描介面可能不提供完整的 iBeacon 原始資料，不能要求一定看到 4C 00 02 15；UUID／Major／Minor 接收驗證與原始封包逐位元組驗證應分別記錄。
+
+2026-10-15，使用者在本專案對話回報 UUID／Major／Minor 能被收到，接著回報 A 鍵停止／恢復、B 鍵顯示 Minor、斷電自動恢復及反覆啟停的測試皆無誤。此為使用者實測回報，非開發代理親自操作或擷取封包。未提供手機型號、iOS／App 版本、實際循環次數或截圖，因此不填入推測值。
 
 ## 已知限制與下一階段
 
-- 尚未實測 BLE、A/B 按鍵、反覆啟停、長時間供電或手機接收；尚未做完整的參數邊界執行測試。實驗性 0.0.1，未建立正式 Release 或 tag。
+- 基本 iPhone 接收與操作已由使用者回報通過；長時間供電、完整參數邊界、精準空中間隔及更多手機型號仍待驗證。實驗性 0.0.1，未建立正式 Release 或 tag。
 - 不與 Bluetooth、其他 Beacon 擴充功能或會直接操作無線電的 radio 程式並用。本次未驗證其餘第三方套件組合。
 - 不提供可連線 GATT 服務與 Bluetooth 燒錄；使用 USB 寫入。Measured Power 尚未校正，不能依此精準估算距離。
 - 此 iBeacon 不會直接觸發 LINE Beacon HWID 流程，後續需要伴隨 App；本次沒有更動任何 LINE Bot 或部署雲端服務。

@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
   "timezone": "Asia/Taipei",
-  "status": "native-build-passed-hardware-unverified",
+  "status": "native-build-passed-basic-hardware-tests-user-reported-passed",
   "prototypeZipSha256": "9cc1ec9547d0463c5bb8d48036b3a8cb6caa3d900a7565f5cfb267787b3b2775",
   "prototypeImportCommit": "c0fec8fc71aff877c8872a22c2699a6494c8a197",
   "testedNativeSourceCommit": "a967a86c63975a533c2ca8c236825b7da68ae207",
@@ -43,7 +43,27 @@
     "enums.d.ts": "d50887ed8037c8893cc9cb5fa0d7cc2014195e2e7b88f1cd0b8eaa945c9c6265",
     "test.ts": "66aebb059df7ac9b3f4b38bc38ae9d4ca533aaa2d9e63cb4126701427a40e42e"
   },
-  "hardwareTests": "NOT RUN",
+  "hardwareTests": {
+    "status": "USER_REPORTED_PASSED",
+    "date": "2026-10-15",
+    "platform": "iPhone",
+    "passed": [
+      "UUID/Major/Minor reception and verification",
+      "Button A stop/restart",
+      "Button B Minor display and status restoration",
+      "Automatic advertising after power cycle",
+      "Repeated stop/restart"
+    ],
+    "evidence": "User report in project conversation; see hardware-test.md",
+    "notVerified": [
+      "raw advertising bytes",
+      "precise over-the-air interval",
+      "measured power calibration",
+      "long-duration stability",
+      "complete parameter boundary tests"
+    ],
+    "deviceFirmwareHashIndependentlyConfirmed": false
+  },
   "uf2": "Not generated; micro:bit target produces HEX",
   "universalHex": {
     "file": "school-beacon-universal-experimental.hex",
